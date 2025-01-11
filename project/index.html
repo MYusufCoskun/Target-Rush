@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Click the Target Game</title>
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: #1a1a1a;
+            font-family: Arial, sans-serif;
+        }
+        #gameContainer {
+            text-align: center;
+        }
+        #gameCanvas {
+            border: 2px solid #fff;
+            background: #000;
+        }
+        #score {
+            color: #fff;
+            font-size: 24px;
+            margin: 10px 0;
+        }
+        #timer {
+            color: #fff;
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        #startButton {
+            padding: 10px 20px;
+            font-size: 18px;
+            background: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        #startButton:hover {
+            background: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div id="gameContainer">
+        <div id="timer">Time: 30s</div>
+        <div id="score">Score: 0</div>
+        <canvas id="gameCanvas" width="400" height="400"></canvas>
+        <br>
+        <button id="startButton">Start Game</button>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>

@@ -1,4 +1,3 @@
-# Create a README file
 echo "# Click Target Game
 
 A simple browser-based game where players click on moving targets to score points.
